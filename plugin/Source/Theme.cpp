@@ -29,7 +29,6 @@ struct SettingsHolder : juce::DeletedAtShutdown
 {
     ~SettingsHolder() override { clearSingletonInstance(); }
     Settings settings;
-    juce::Typeface::Ptr pixel;
     JUCE_DECLARE_SINGLETON_INLINE (SettingsHolder, false)
 };
 
@@ -129,11 +128,22 @@ Palette Settings::build() const
     return p;
 }
 
+FontLease::Shared* FontLease::current = nullptr;
+
+FontLease::Shared::Shared()
+    : typeface (juce::Typeface::createSystemTypefaceFor (BinaryData::PixelifySans_ttf, BinaryData::PixelifySans_ttfSize))
+{
+    current = this;
+}
+
+FontLease::Shared::~Shared() { current = nullptr; }
+
 juce::Typeface::Ptr pixelTypeface()
 {
-    auto* h = SettingsHolder::getInstance();
-    if (h->pixel == nullptr) h->pixel = juce::Typeface::createSystemTypefaceFor (BinaryData::PixelifySans_ttf, BinaryData::PixelifySans_ttfSize);
-    return h->pixel;
+    // Held only while an editor (or a FontLease) is alive. If it lived until JUCE's shutdown it would be
+    // released after Windows' DirectWrite factory, which crashes the host when the plugin unloads.
+    if (FontLease::current != nullptr) return FontLease::current->typeface;
+    return juce::Typeface::createSystemTypefaceFor (BinaryData::PixelifySans_ttf, BinaryData::PixelifySans_ttfSize);
 }
 
 juce::Font font (float size, bool bold)

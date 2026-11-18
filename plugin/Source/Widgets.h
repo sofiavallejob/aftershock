@@ -9,6 +9,7 @@ namespace ui
 {
 class Look : public juce::LookAndFeel_V4
 {
+    FontLease fontLease;   // must be constructed before refresh() asks for the font
 public:
     Look();
     void refresh();   // re-read the palette after a settings change

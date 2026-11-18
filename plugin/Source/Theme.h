@@ -66,6 +66,14 @@ public:
     void invalidate() { cacheValid = false; }
 };
 
+// Keeps the interface font loaded. Each editor owns one; the font is released when the last one goes.
+struct FontLease
+{
+    struct Shared { Shared(); ~Shared(); juce::Typeface::Ptr typeface; };
+    juce::SharedResourcePointer<Shared> shared;
+    static Shared* current;
+};
+
 juce::Font font (float size, bool bold = false);
 juce::Typeface::Ptr pixelTypeface();
 

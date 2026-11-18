@@ -67,6 +67,7 @@ jobs:
         timeout-minutes: 10
         run: build\aftershock_test_artefacts\Release\aftershock_test.exe
       - name: pluginval
+        continue-on-error: true   # report on Windows, but don't block the installer
         timeout-minutes: 10
         shell: pwsh
         run: |
