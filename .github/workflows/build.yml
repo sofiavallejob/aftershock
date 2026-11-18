@@ -12,6 +12,7 @@ on:
 jobs:
   macos:
     runs-on: macos-15
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v5
       - name: Configure
@@ -19,8 +20,10 @@ jobs:
       - name: Build
         run: cmake --build build --config Release -j 4 --target Aftershock_VST3 Aftershock_AU Aftershock_Standalone aftershock_test aftershock_render
       - name: Test processor
+        timeout-minutes: 10
         run: build/aftershock_test_artefacts/Release/aftershock_test
       - name: pluginval
+        timeout-minutes: 10
         run: |
           curl -L -o pluginval.zip https://github.com/Tracktion/pluginval/releases/download/v1.0.4/pluginval_macOS.zip
           unzip -q pluginval.zip
@@ -53,6 +56,7 @@ jobs:
 
   windows:
     runs-on: windows-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v5
       - name: Configure
@@ -60,8 +64,10 @@ jobs:
       - name: Build
         run: cmake --build build --config Release -j 4 --target Aftershock_VST3 Aftershock_Standalone aftershock_test aftershock_render
       - name: Test processor
+        timeout-minutes: 10
         run: build\aftershock_test_artefacts\Release\aftershock_test.exe
       - name: pluginval
+        timeout-minutes: 10
         shell: pwsh
         run: |
           Invoke-WebRequest https://github.com/Tracktion/pluginval/releases/download/v1.0.4/pluginval_Windows.zip -OutFile pluginval.zip
