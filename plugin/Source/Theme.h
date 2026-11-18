@@ -55,8 +55,8 @@ public:
     Palette palette() const;
     float textScale() const { return 1.0f + 0.15f * (float) textSize(); }
 
+    Settings();   // use get(); public only so the shutdown-owned holder can make it
 private:
-    Settings();
     juce::PropertiesFile& props() const { return *file; }
     std::unique_ptr<juce::PropertiesFile> file;
     mutable Palette cache;

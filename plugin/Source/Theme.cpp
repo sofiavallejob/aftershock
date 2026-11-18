@@ -22,11 +22,18 @@ Accent settingAccent (const juce::String& key)
     return grey;
 }
 
-Settings& Settings::get()
+// Owned by JUCE and deleted when JUCE shuts down, not by a static destructor: on Windows a static
+// destructor runs while the DLL unloads (under the loader lock), and the settings file's timer
+// and the change broadcaster can deadlock there.
+struct SettingsHolder : juce::DeletedAtShutdown
 {
-    static Settings s;
-    return s;
-}
+    ~SettingsHolder() override { clearSingletonInstance(); }
+    Settings settings;
+    juce::Typeface::Ptr pixel;
+    JUCE_DECLARE_SINGLETON_INLINE (SettingsHolder, false)
+};
+
+Settings& Settings::get() { return SettingsHolder::getInstance()->settings; }
 
 Settings::Settings()
 {
@@ -36,6 +43,7 @@ Settings::Settings()
     o.folderName = "Aftershock";
     o.osxLibrarySubFolder = "Application Support";
     o.storageFormat = juce::PropertiesFile::storeAsXML;
+    o.millisecondsBeforeSaving = -1;   // no background timer; set() saves straight away
     file = std::make_unique<juce::PropertiesFile> (o);
 }
 
@@ -123,8 +131,9 @@ Palette Settings::build() const
 
 juce::Typeface::Ptr pixelTypeface()
 {
-    static auto tf = juce::Typeface::createSystemTypefaceFor (BinaryData::PixelifySans_ttf, BinaryData::PixelifySans_ttfSize);
-    return tf;
+    auto* h = SettingsHolder::getInstance();
+    if (h->pixel == nullptr) h->pixel = juce::Typeface::createSystemTypefaceFor (BinaryData::PixelifySans_ttf, BinaryData::PixelifySans_ttfSize);
+    return h->pixel;
 }
 
 juce::Font font (float size, bool bold)
