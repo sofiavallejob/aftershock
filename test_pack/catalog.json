@@ -1,0 +1,503 @@
+{
+ "format": "aftershock-pack",
+ "version": 1,
+ "fs": 20.0,
+ "bands_hz": [
+  0.1,
+  0.163,
+  0.265,
+  0.431,
+  0.701,
+  1.141,
+  1.857,
+  3.021,
+  4.916,
+  8.0
+ ],
+ "settings": {
+  "interface": "Subduction interface",
+  "intraslab": "Intermediate-depth slab",
+  "deep": "Deep slab (> 300 km)",
+  "collision": "Continental collision / thrust",
+  "strikeslip": "Continental strike-slip",
+  "europe": "Mediterranean crustal",
+  "oceanic": "Oceanic intraplate / transform",
+  "craton": "Stable continental interior",
+  "volcanic": "Volcanic"
+ },
+ "events": [
+  {
+   "id": "petrinja2020",
+   "name": "Petrinja, Croatia",
+   "setting": "europe",
+   "time": "2020-12-29T11:19:54.762000Z",
+   "lat": 45.4244,
+   "lon": 16.2573,
+   "depth": 10.0,
+   "mag": 6.4,
+   "magtype": "mww",
+   "usgs_id": "us6000d3zh",
+   "stations": [
+    {
+     "net": "G",
+     "sta": "SSB",
+     "loc": "00",
+     "channel": "BH",
+     "datacentre": "EARTHSCOPE",
+     "lat": 45.279,
+     "lon": 4.542,
+     "dist_km": 917.4,
+     "dist_deg": 8.25,
+     "band": "regional",
+     "fs": 20.0,
+     "t0": -30.0,
+     "n": 18601,
+     "P": 119.7,
+     "S": 214.08,
+     "R": 254.8,
+     "coda_end": 900.0,
+     "snr": 215.1,
+     "sr_orig": 20.0,
+     "clipped": false,
+     "bands": [
+      {
+       "f": 0.1,
+       "rt60": 2923.6,
+       "fit_db": 10,
+       "q_app": 133.0,
+       "snr": 18.0,
+       "energy_db": 0.0
+      },
+      {
+       "f": 0.163,
+       "rt60": 3376.1,
+       "fit_db": 10,
+       "q_app": 249.9,
+       "snr": 19.8,
+       "energy_db": -2.66
+      },
+      {
+       "f": 0.265,
+       "rt60": 3727.7,
+       "fit_db": 10,
+       "q_app": 448.9,
+       "snr": 10.7,
+       "energy_db": -12.37
+      },
+      {
+       "f": 0.431,
+       "rt60": 951.0,
+       "fit_db": 5,
+       "q_app": 186.4,
+       "snr": 7.8,
+       "energy_db": -17.13
+      },
+      {
+       "f": 0.701,
+       "rt60": 1131.2,
+       "fit_db": 5,
+       "q_app": 360.7,
+       "snr": 5.3,
+       "energy_db": -24.25
+      },
+      {
+       "f": 1.141,
+       "rt60": 1145.4,
+       "fit_db": 5,
+       "q_app": 594.4,
+       "snr": 5.4,
+       "energy_db": -32.89
+      },
+      {
+       "f": 1.857,
+       "rt60": 578.0,
+       "fit_db": 5,
+       "q_app": 488.1,
+       "snr": 5.4,
+       "energy_db": -37.84
+      },
+      {
+       "f": 3.021,
+       "rt60": 684.7,
+       "fit_db": 5,
+       "q_app": 940.8,
+       "snr": 5.3,
+       "energy_db": -45.28
+      },
+      {
+       "f": 4.916,
+       "rt60": null,
+       "fit_db": null,
+       "q_app": null,
+       "snr": 5.6,
+       "energy_db": -57.18
+      },
+      {
+       "f": 8.0,
+       "rt60": null,
+       "fit_db": null,
+       "q_app": null,
+       "snr": 6.8,
+       "energy_db": -77.82
+      }
+     ],
+     "taps": [
+      [
+       0.3518,
+       0.387,
+       0.935
+      ],
+      [
+       0.5168,
+       0.468,
+       0.971
+      ],
+      [
+       0.6672,
+       0.392,
+       0.9
+      ],
+      [
+       0.759,
+       0.62,
+       0.056
+      ],
+      [
+       0.8011,
+       0.462,
+       0.887
+      ],
+      [
+       0.8504,
+       0.843,
+       0.948
+      ],
+      [
+       0.9276,
+       1.0,
+       0.051
+      ],
+      [
+       0.9794,
+       0.865,
+       0.002
+      ]
+     ],
+     "offset": 0,
+     "scale": 1.0870771328071076e-08
+    },
+    {
+     "net": "II",
+     "sta": "BORK",
+     "loc": "10",
+     "channel": "BH",
+     "datacentre": "EARTHSCOPE",
+     "lat": 53.0461,
+     "lon": 70.3184,
+     "dist_km": 3928.4,
+     "dist_deg": 35.33,
+     "band": "tele",
+     "fs": 20.0,
+     "t0": -30.0,
+     "n": 48601,
+     "P": 415.27,
+     "S": 750.34,
+     "R": 1091.2,
+     "coda_end": 2400.0,
+     "snr": 192.9,
+     "sr_orig": 40.0,
+     "clipped": false,
+     "bands": [
+      {
+       "f": 0.1,
+       "rt60": 3350.5,
+       "fit_db": 20,
+       "q_app": 152.4,
+       "snr": 62.6,
+       "energy_db": 0.0
+      },
+      {
+       "f": 0.163,
+       "rt60": 4039.5,
+       "fit_db": 20,
+       "q_app": 299.0,
+       "snr": 27.1,
+       "energy_db": -9.16
+      },
+      {
+       "f": 0.265,
+       "rt60": 3047.9,
+       "fit_db": 10,
+       "q_app": 367.1,
+       "snr": 14.7,
+       "energy_db": -24.24
+      },
+      {
+       "f": 0.431,
+       "rt60": 5037.5,
+       "fit_db": 5,
+       "q_app": 987.2,
+       "snr": 7.2,
+       "energy_db": -36.7
+      },
+      {
+       "f": 0.701,
+       "rt60": null,
+       "fit_db": null,
+       "q_app": null,
+       "snr": 6.1,
+       "energy_db": -45.26
+      },
+      {
+       "f": 1.141,
+       "rt60": null,
+       "fit_db": null,
+       "q_app": null,
+       "snr": 9.9,
+       "energy_db": -51.86
+      },
+      {
+       "f": 1.857,
+       "rt60": null,
+       "fit_db": null,
+       "q_app": null,
+       "snr": 11.3,
+       "energy_db": -60.74
+      },
+      {
+       "f": 3.021,
+       "rt60": null,
+       "fit_db": null,
+       "q_app": null,
+       "snr": 10.4,
+       "energy_db": -72.59
+      },
+      {
+       "f": 4.916,
+       "rt60": null,
+       "fit_db": null,
+       "q_app": null,
+       "snr": 3.6,
+       "energy_db": -78.04
+      },
+      {
+       "f": 8.0,
+       "rt60": null,
+       "fit_db": null,
+       "q_app": null,
+       "snr": 2.3,
+       "energy_db": -84.95
+      }
+     ],
+     "taps": [
+      [
+       0.0104,
+       0.599,
+       0.991
+      ],
+      [
+       0.0667,
+       0.458,
+       0.919
+      ],
+      [
+       0.2091,
+       0.527,
+       0.996
+      ],
+      [
+       0.2752,
+       0.593,
+       0.997
+      ],
+      [
+       0.7823,
+       1.0,
+       0.609
+      ],
+      [
+       0.8652,
+       0.701,
+       0.896
+      ],
+      [
+       0.925,
+       0.485,
+       0.827
+      ],
+      [
+       0.9852,
+       0.978,
+       0.032
+      ]
+     ],
+     "offset": 111606,
+     "scale": 7.469878767334048e-09
+    }
+   ]
+  },
+  {
+   "id": "kilauea2018",
+   "name": "Kilauea, Hawaii",
+   "setting": "volcanic",
+   "time": "2018-05-04T22:32:54.650000Z",
+   "lat": 19.3181667,
+   "lon": -154.9996667,
+   "depth": 5.8,
+   "mag": 6.9,
+   "magtype": "mw",
+   "usgs_id": "hv70116556",
+   "stations": [
+    {
+     "net": "IU",
+     "sta": "COR",
+     "loc": "00",
+     "channel": "BH",
+     "datacentre": "EARTHSCOPE",
+     "lat": 44.5855,
+     "lon": -123.3046,
+     "dist_km": 4055.2,
+     "dist_deg": 36.47,
+     "band": "tele",
+     "fs": 20.0,
+     "t0": -30.0,
+     "n": 28081,
+     "P": 425.68,
+     "S": 768.9,
+     "R": 1126.5,
+     "coda_end": 1374.0,
+     "snr": 13.7,
+     "sr_orig": 20.0,
+     "clipped": false,
+     "bands": [
+      {
+       "f": 0.1,
+       "rt60": null,
+       "fit_db": null,
+       "q_app": null,
+       "snr": 5.2,
+       "energy_db": 0.0
+      },
+      {
+       "f": 0.163,
+       "rt60": null,
+       "fit_db": null,
+       "q_app": null,
+       "snr": 6.6,
+       "energy_db": -6.31
+      },
+      {
+       "f": 0.265,
+       "rt60": null,
+       "fit_db": null,
+       "q_app": null,
+       "snr": 5.4,
+       "energy_db": -25.17
+      },
+      {
+       "f": 0.431,
+       "rt60": null,
+       "fit_db": null,
+       "q_app": null,
+       "snr": 6.8,
+       "energy_db": -30.79
+      },
+      {
+       "f": 0.701,
+       "rt60": 504.2,
+       "fit_db": 10,
+       "q_app": 160.8,
+       "snr": 9.2,
+       "energy_db": -37.07
+      },
+      {
+       "f": 1.141,
+       "rt60": 310.4,
+       "fit_db": 10,
+       "q_app": 161.1,
+       "snr": 14.4,
+       "energy_db": -44.36
+      },
+      {
+       "f": 1.857,
+       "rt60": 376.6,
+       "fit_db": 5,
+       "q_app": 318.0,
+       "snr": 7.0,
+       "energy_db": -49.27
+      },
+      {
+       "f": 3.021,
+       "rt60": null,
+       "fit_db": null,
+       "q_app": null,
+       "snr": 2.7,
+       "energy_db": -51.45
+      },
+      {
+       "f": 4.916,
+       "rt60": null,
+       "fit_db": null,
+       "q_app": null,
+       "snr": 3.5,
+       "energy_db": -54.86
+      },
+      {
+       "f": 8.0,
+       "rt60": null,
+       "fit_db": null,
+       "q_app": null,
+       "snr": 3.0,
+       "energy_db": -70.19
+      }
+     ],
+     "taps": [
+      [
+       0.0325,
+       0.323,
+       0.612
+      ],
+      [
+       0.0845,
+       0.403,
+       0.722
+      ],
+      [
+       0.1328,
+       0.318,
+       0.707
+      ],
+      [
+       0.4488,
+       0.302,
+       0.167
+      ],
+      [
+       0.8043,
+       0.511,
+       0.154
+      ],
+      [
+       0.8507,
+       1.0,
+       0.316
+      ],
+      [
+       0.9005,
+       0.534,
+       0.118
+      ],
+      [
+       0.9449,
+       0.356,
+       0.474
+      ]
+     ],
+     "offset": 403212,
+     "scale": 1.318087489681604e-09
+    }
+   ]
+  }
+ ],
+ "credits": "Waveforms: FDSN data centres EarthScope (formerly IRIS DMC), ORFEUS and GEOFON. Each station lists its FDSN network code; see https://www.fdsn.org/networks/ for network citations and DOIs. Origins: USGS ComCat. Travel times: iasp91 via ObsPy TauP."
+}

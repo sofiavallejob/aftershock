@@ -1,0 +1,5 @@
+build/
+pack/aftershock_pack.bin
+*.wav
+__pycache__/
+.DS_Store

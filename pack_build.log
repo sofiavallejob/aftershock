@@ -1,0 +1,165 @@
+23:54:52   maule2010      near     no usable station (0 candidates) []
+23:54:53   tohoku2011     near     no usable station (4 candidates) ['JP.JMM:no data', 'JP.JTM:no data', 'JP.JYT:no data', 'PS.TSK:sensor step']
+23:55:05   tohoku2011     regional no usable station (89 candidates) ['IU.YSS:near clipping', 'G.INU:near clipping', 'IC.MDJ:near clipping', 'II.ERM:near clipping', 'IU.MAJO:near clipping']
+23:55:13   illapel2015    near     C1.MT05       220 km  snr 47493.5  coda    900 s
+23:55:14   chignik2021    near     no usable station (24 candidates) ['AK.CHN:near clipping', 'AV.S14K:near clipping', 'AK.CHI:no data', 'AK.S15K:energy before P', 'AT.CHGN:near clipping']
+23:55:18   maule2010      regional no usable station (39 candidates) ['IU.LCO:no data', 'IU.TRQA:near clipping', 'GE.LVC:no data', 'IU.LVC:near clipping', 'GT.PLCA:sensor step']
+23:55:22   tohoku2011     tele     IU.DAV       3850 km  snr   96.5  coda   2400 s
+23:55:22 done tohoku2011: 1 stations
+23:55:24   maule2010      tele     II.HOPE      3441 km  snr   94.2  coda   2400 s
+23:55:24 done maule2010: 1 stations
+23:55:30   kamchatka2025  near     no usable station (1 candidates) ['IU.PET:near clipping']
+23:55:31   chignik2021    regional no usable station (406 candidates) ['IU.COLA:near clipping', 'IU.ADK:near clipping', 'II.KDAK:near clipping', 'US.EGAK:no data', 'US.WRAK:sensor step']
+23:55:44   kamchatka2025  regional AV.LSSE      1251 km  snr   22.0  coda   1112 s
+23:55:44   chiapas2017    near     no usable station (4 candidates) ['MX.CCIG:no data', 'GI.RETA:energy before P', 'MU.HUIG:no data', 'GI.HUEH:gaps']
+23:55:44   chignik2021    tele     IU.POHA      3957 km  snr   27.7  coda   2400 s
+23:55:44 done chignik2021: 1 stations
+23:55:58   puebla2017     near     no usable station (10 candidates) ['G.UNM:energy before P', 'MU.TPIG:no data', 'MX.TLIG:near clipping', 'MU.TLIG:no data', '5K.ATLI:no data']
+23:56:00   illapel2015    regional 8G.MJ23       910 km  snr 147089.8  coda    900 s
+23:56:07   kamchatka2025  tele     IU.GUMO      4527 km  snr   27.6  coda   2400 s
+23:56:07 done kamchatka2025: 2 stations
+23:56:13   puebla2017     regional CU.TGUH      1297 km  snr  138.1  coda   1147 s
+23:56:19   illapel2015    tele     II.HOPE      3755 km  snr   45.0  coda   2400 s
+23:56:19 done illapel2015: 3 stations
+23:56:21   peru2019       near     no usable station (0 candidates) []
+23:56:22   chiapas2017    regional no usable station (148 candidates) ['GE.BOA:no data', 'GE.BOAB:sensor step', 'IU.TEIG:near clipping', 'G.UNM:near clipping', 'CU.TGUH:near clipping']
+23:56:25   puebla2017     tele     US.NLWA      3945 km  snr   64.5  coda   2400 s
+23:56:25 done puebla2017: 2 stations
+23:56:27   fiji2018       near     no usable station (0 candidates) []
+23:56:33   hindukush2015  near     no usable station (9 candidates) ['GE.KBU:no data', 'IU.KBL:near clipping', 'TJ.MANEM:gaps', 'TJ.IGRN:near clipping', 'TJ.SHAA:near clipping']
+23:56:40   fiji2018       regional no usable station (10 candidates) ['IU.AFI:near clipping', 'IU.FUNA:near clipping', 'IU.RAO:gaps', 'G.FUTU:near clipping', 'II.MSVF:near clipping']
+23:56:42   peru2019       regional CM.TUM        928 km  snr 3108.9  coda    900 s
+23:56:49   iquique2014    near     no usable station (42 candidates) ['CX.MNMCX:near clipping', 'IQ.POZO:no data', 'IQ.PATA:sensor step', 'C1.AP01:no data', 'C1.TA01:no data']
+23:56:59   chiapas2017    tele     CU.BBGH      3711 km  snr   24.0  coda   2400 s
+23:56:59 done chiapas2017: 1 stations
+23:57:01   peru2019       tele     G.UNM       3821 km  snr  141.0  coda   2400 s
+23:57:01 done peru2019: 2 stations
+23:57:01   fiji2018b      near     no usable station (1 candidates) ['II.MSVF:near clipping']
+23:57:07   okhotsk2013    near     no usable station (0 candidates) []
+23:57:08   fiji2018       tele     no usable station (440 candidates) ['GE.PMG:no data', 'IU.PMG:near clipping', 'IU.JOHN:energy before P', 'G.CAN:energy before P', 'IU.CTAO:near clipping']
+23:57:08 done fiji2018: 0 stations
+23:57:09   hindukush2015  regional no usable station (87 candidates) ['II.AAK:near clipping', 'II.NIL:near clipping', 'IU.MAKZ:energy before P', 'IM.GEYT:no data', 'IM.MK31:energy before P']
+23:57:14   fiji2018b      regional AU.NFK       1648 km  snr  374.0  coda   1291 s
+23:57:15   iquique2014    regional no usable station (64 candidates) ['IU.LCO:no data', 'II.NNA:near clipping', 'GE.LVC:no data', 'IU.LVC:near clipping', 'IU.SAML:near clipping']
+23:57:16   okhotsk2013    regional no usable station (10 candidates) ['IU.YSS:sensor step', 'IU.MA2:near clipping', 'IU.PET:near clipping', 'IU.YAK:no data', 'II.ERM:near clipping']
+23:57:17   bonin2015      near     no usable station (2 candidates) ['JP.JCJ:gaps', 'PS.OGS:no data']
+23:57:25   iquique2014    tele     CU.BBGH      3825 km  snr   15.7  coda   1327 s
+23:57:25 done iquique2014: 1 stations
+23:57:27   bonin2015      regional PS.TSK        929 km  snr 25232.8  coda    916 s
+23:57:30   fiji2018b      tele     II.TAU       4049 km  snr  203.9  coda   2400 s
+23:57:30 done fiji2018b: 2 stations
+23:57:33   gorkha2015     near     no usable station (2 candidates) ['NQ.KATNP:energy before P', 'IO.EVN:sensor step']
+23:57:38   wenchuan2008   near     no usable station (3 candidates) ['CB.CD2:no data', 'X4.GS18:near clipping', 'X4.GS08:near clipping']
+23:57:42   okhotsk2013    tele     IU.GUMO      4640 km  snr  135.2  coda   2400 s
+23:57:42 done okhotsk2013: 1 stations
+23:57:49   kashmir2005    near     no usable station (1 candidates) ['II.NIL:sensor step']
+23:57:51   gorkha2015     regional GE.KBU       1637 km  snr  128.9  coda   1425 s
+23:57:57   wenchuan2008   regional no usable station (153 candidates) ['IC.KMI:near clipping', 'IC.XAN:near clipping', 'IC.LSA:near clipping', 'IC.ENH:near clipping', 'IU.CHTO:gaps']
+23:57:57   gorkha2015     tele     IU.GNI       3878 km  snr  366.5  coda   2400 s
+23:57:57 done gorkha2015: 2 stations
+23:58:01   bonin2015      tele     GE.SAUI      4085 km  snr   57.1  coda   2400 s
+23:58:01 done bonin2015: 2 stations
+23:58:07   kashmir2005    regional no usable station (247 candidates) ['G.WUS:no data', 'II.AAK:near clipping', 'II.ABKT:sensor step', 'IC.WMQ:near clipping', 'XP.QUAR:sensor step']
+23:58:11   noto2024       near     no usable station (11 candidates) ['IU.MAJO:energy before P', 'G.INU:near clipping', 'IM.MJAR:no data', 'JP.JSD:gaps', 'JP.JGF:gaps']
+23:58:13   wenchuan2008   tele     GE.PMBT      3758 km  snr   33.9  coda   2400 s
+23:58:13 done wenchuan2008: 1 stations
+23:58:19   noto2024       regional IU.YSS       1145 km  snr  339.9  coda   1045 s
+23:58:21   hindukush2015  tele     GE.SANT      3988 km  snr   42.2  coda   2400 s
+23:58:21 done hindukush2015: 1 stations
+23:58:34   kashmir2005    tele     GE.PUL       4192 km  snr  127.4  coda   2400 s
+23:58:34 done kashmir2005: 1 stations
+23:58:39   noto2024       tele     IU.ADK       3905 km  snr   19.1  coda   1279 s
+23:58:39 done noto2024: 2 stations
+23:58:39   turkiye2023    near     no usable station (8 candidates) ['GE.MALT:no data', 'GE.ARPR:no data', 'KO.BNN:sensor step', 'MN.ARPR:no data', 'KO.GAZ:sensor step']
+23:58:43   kaikoura2016   near     no usable station (5 candidates) ['IU.SNZO:energy before P', 'NZ.RPZ:near clipping', 'NZ.KHZ:near clipping', 'NZ.QRZ:near clipping', 'NZ.ODZ:near clipping']
+23:58:45   haiti2010      near     no usable station (5 candidates) ['CU.SDDR:near clipping', 'CU.GTBY:near clipping', 'AY.NQAFC:no data', 'DR.PUCM:no data', 'DR.SDD:energy before P']
+23:59:00   kaikoura2016   regional no usable station (8 candidates) ['NZ.CTZ:no data', 'NZ.OUZ:near clipping', 'NZ.URZ:near clipping', 'NZ.HIZ:near clipping', 'NZ.BKZ:near clipping']
+23:59:08   ridgecrest2019 near     no usable station (772 candidates) ['US.TPNV:near clipping', 'II.PFO:near clipping', 'II.XPFO:near clipping', 'CI.TJR:no data', 'CI.ARV:energy before P']
+23:59:14   kaikoura2016   tele     IU.HNR       3905 km  snr   68.6  coda   2400 s
+23:59:14 done kaikoura2016: 1 stations
+23:59:16   turkiye2023    regional GE.THERA     1034 km  snr  140.2  coda    959 s
+23:59:19   haiti2010      regional no usable station (129 candidates) ['IU.SDV:sensor step', 'IU.SJG:no data', 'CU.ANWB:energy before P', 'CU.MTDJ:near clipping', 'G.FDF:energy before P']
+23:59:24   hualien2024    near     no usable station (31 candidates) ['IU.TATO:gaps', 'JP.YOJ:near clipping', 'PS.ISG:near clipping', 'TW.WFSB:no data', 'TW.TATO:no data']
+23:59:28   haiti2010      tele     IU.SLBS      3916 km  snr  134.2  coda   2400 s
+23:59:28 done haiti2010: 1 stations
+23:59:28   ridgecrest2019 regional no usable station (687 candidates) ['US.HLID:sensor step', 'US.HWUT:energy before P', 'US.MVCO:energy before P', 'US.AHID:sensor step', 'US.BMO:sensor step']
+23:59:35   ridgecrest2019 tele     CU.TGUH      3866 km  snr   66.5  coda   2400 s
+23:59:35 done ridgecrest2019: 1 stations
+23:59:45   hualien2024    regional no usable station (27 candidates) ['IC.SSE:near clipping', 'IC.QIZ:sensor step', 'IC.ENH:near clipping', 'IU.INCN:gaps', 'PS.BAG:no data']
+23:59:52   myanmar2025    near     no usable station (7 candidates) ['GE.NPW:energy before P', 'MM.NGU:energy before P', 'MM.TGI:snr 1.5', 'MM.KTA:no data', 'MM.MDY:no data']
+23:59:57   turkiye2023    tele     GE.ILTH      3781 km  snr   27.2  coda   1560 s
+23:59:57 done turkiye2023: 2 stations
+ WARNING: FIR normalized: sum[coef]=4.096000E+03;     
+ WARNING: FIR normalized: sum[coef]=3.355443E+07;     
+ WARNING: FIR normalized: sum[coef]=8.388606E+06;     
+ WARNING: FIR normalized: sum[coef]=4.096000E+03;     
+ WARNING: FIR normalized: sum[coef]=3.355443E+07;     
+ WARNING: FIR normalized: sum[coef]=8.388606E+06;     
+ WARNING: FIR normalized: sum[coef]=4.096000E+03;     
+ WARNING: FIR normalized: sum[coef]=3.355443E+07;     
+ WARNING: FIR normalized: sum[coef]=8.388606E+06;     
+00:00:16   myanmar2025    regional no usable station (40 candidates) ['IC.LSA:near clipping', 'IC.KMI:no data', 'IU.CHTO:near clipping', 'IC.QIZ:energy before P', 'IC.ENH:no data']
+00:00:35   myanmar2025    tele     II.COCO      3784 km  snr   35.7  coda   2400 s
+00:00:35 done myanmar2025: 1 stations
+00:00:42   norcia2016     near     no usable station (31 candidates) ['MN.AQU:near clipping', 'CR.BRJN:energy before P', 'CR.MORI:no data', 'MN.VLC:energy before P', 'CR.HVAR:no data']
+00:00:51   hualien2024    tele     GE.PMBI      3479 km  snr   34.0  coda   1422 s
+00:00:51 done hualien2024: 1 stations
+00:00:52   sumatra2012    near     no usable station (0 candidates) []
+ WARNING: FIR normalized: sum[coef]=4.096000E+03;     
+ WARNING: FIR normalized: sum[coef]=3.355443E+07;     
+ WARNING: FIR normalized: sum[coef]=8.388606E+06;     
+ WARNING: FIR normalized: sum[coef]=4.096000E+03;     
+ WARNING: FIR normalized: sum[coef]=3.355443E+07;     
+ WARNING: FIR normalized: sum[coef]=8.388606E+06;     
+00:01:11   durres2019     near     no usable station (30 candidates) ['GE.MATE:no data', 'MN.PDG:no data', 'CR.DBRK:no data', 'HL.KEK:energy before P', 'MN.KEK:no data']
+ WARNING: FIR normalized: sum[coef]=4.096000E+03;     
+ WARNING: FIR normalized: sum[coef]=3.355443E+07;     
+ WARNING: FIR normalized: sum[coef]=8.388606E+06;     
+00:01:20   norcia2016     regional G.CLF       1022 km  snr  228.0  coda    952 s
+00:01:23   petrinja2020   near     no usable station (100 candidates) ['SL.VACE:no data', 'SL.GROS:gaps', 'SL.DTSE:gaps', 'CR.RIY:no data', 'SL.VNDS:gaps']
+00:01:28   samos2020      near     no usable station (18 candidates) ['GE.APE:no data', 'GE.THERA:no data', 'GE.SANT:no data', 'GE.KARP:energy before P', 'GE.ZKR:no data']
+00:01:29   petrinja2020   regional G.SSB        917 km  snr  215.1  coda    900 s
+00:01:36   durres2019     regional GE.GVD        842 km  snr  126.3  coda    900 s
+00:01:38   sumatra2012    regional no usable station (25 candidates) ['GE.BKNI:no data', 'GE.LHMI:near clipping', 'GE.GSI:no data', 'GE.MNAI:sensor step', 'GE.PMBI:near clipping']
+00:01:43   durres2019     tele     II.UOSS      3841 km  snr   52.4  coda   2400 s
+00:01:43 done durres2019: 2 stations
+ WARNING: FIR normalized: sum[coef]=9.767192E-01;     
+ WARNING: FIR normalized: sum[coef]=9.767192E-01;     
+ WARNING: FIR normalized: sum[coef]=9.767192E-01;     
+ WARNING: FIR normalized: sum[coef]=9.767192E-01;     
+ WARNING: FIR normalized: sum[coef]=9.767192E-01;     
+ WARNING: FIR normalized: sum[coef]=9.767192E-01;     
+00:01:52   norcia2016     tele     IU.KBS       4017 km  snr   13.8  coda   1285 s
+00:01:52 done norcia2016: 2 stations
+00:01:54   ascension2016  near     no usable station (8 candidates) ['XS.L02A:The given directions are not linearly in', 'XS.I34D:sensor step', 'XS.L33D:The given directions are not linearly in', 'XS.S32D:The given directions are not linearly in', 'XS.S03D:sensor step']
+00:01:58   ascension2016  regional G.MBO       1600 km  snr  114.3  coda   1395 s
+00:01:58   petrinja2020   tele     II.BORK      3928 km  snr  192.9  coda   2400 s
+00:01:58 done petrinja2020: 2 stations
+00:02:01   petermann2016  near     no usable station (1 candidates) ['AU.WRKA:near clipping']
+00:02:07   ascension2016  tele     G.MPG       3913 km  snr   32.9  coda   1118 s
+00:02:07 done ascension2016: 2 stations
+00:02:09   petermann2016  regional IU.MBWA      1146 km  snr  571.8  coda   1047 s
+00:02:15   petermann2016  tele     G.SANVU     4035 km  snr   36.0  coda    947 s
+00:02:15 done petermann2016: 2 stations
+00:02:16   mineral2011    near     US.CBN         59 km  snr 14010.1  coda    900 s
+00:02:19   botswana2017   near     no usable station (13 candidates) ['GT.LBTB:sensor step', 'NR.NE220:no data', 'NR.NE212:near clipping', 'NR.NE208:near clipping', 'NR.NE209:no data']
+00:02:20   mineral2011    regional IU.WVT        902 km  snr 4331.3  coda    900 s
+00:02:36   botswana2017   regional IU.TSUM       876 km  snr 27443.8  coda    900 s
+00:02:42   sumatra2012    tele     GE.BNDI      4167 km  snr   55.8  coda   2400 s
+00:02:42 done sumatra2012: 1 stations
+00:02:42   botswana2017   tele     G.ROCAM     3970 km  snr    9.2  coda    826 s
+00:02:42 done botswana2017: 2 stations
+00:02:58   etna2018       near     GE.MARCO      302 km  snr  406.5  coda    900 s
+00:02:59   kilauea2018    near     no usable station (82 candidates) ['IU.POHA:gaps', 'PT.MHA:no data', 'NP.2826:energy before P', 'HV.KOHD:energy before P', 'NP.2847:energy before P']
+00:02:59   mineral2011    tele     US.NLWA      3850 km  snr    9.4  coda   2213 s
+00:02:59 done mineral2011: 3 stations
+00:03:07   kilauea2018    regional no usable station (7 candidates) ['G.KIP:near clipping', 'IU.KIP:near clipping', 'IU.JOHN:snr 7.5', 'PT.KEKH:no data', 'PT.LIH:no data']
+00:03:23   samos2020      regional no usable station (447 candidates) ['GE.MATE:energy before P', 'GE.KSDI:no data', 'GE.MARCO:energy before P', 'GE.SALP:near clipping', 'GE.ARPR:sensor step']
+00:03:28   kilauea2018    tele     IU.COR       4055 km  snr   13.7  coda   1374 s
+00:03:28 done kilauea2018: 1 stations
+00:03:40   samos2020      tele     IU.MACI      4142 km  snr   12.3  coda    852 s
+00:03:40 done samos2020: 1 stations
+00:04:25   etna2018       regional G.SSB       1223 km  snr    8.7  coda    502 s
+00:05:08   etna2018       tele     II.UOSS      4121 km  snr    9.1  coda    854 s
+00:05:08 done etna2018: 3 stations
+00:05:08 pack: 34 events, 54 traces, 10.7 MB

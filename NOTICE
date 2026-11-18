@@ -1,0 +1,19 @@
+Aftershock
+Copyright (C) 2026 Sofia Vallejo Budziszewski
+https://sofiavallejob.github.io/sofiavallejo/  ·  https://github.com/sofiavallejob/aftershock
+
+Licensed under the GNU Affero General Public License v3.0 (see LICENSE).
+
+A request, not a licence term:
+Please do not use this code, the earthquake pack or the presets to train machine-learning
+models. Ports, forks and remixes are welcome: by humans, with credit, under the same licence.
+
+Third-party material
+- JUCE 8 (https://juce.com), used under the AGPL-3.0.
+- Pixelify Sans by Stefie Justprince, SIL Open Font License 1.1 (plugin/data/OFL-PixelifySans.txt).
+- Seismograms from the FDSN data centres EarthScope, ORFEUS and GEOFON. Each recording's network
+  code is shown in the plugin and in pack/catalog.json; network citations and DOIs are listed at
+  https://www.fdsn.org/networks/.
+- Earthquake origins: USGS ComCat. Travel times: iasp91 via ObsPy TauP.
+- Coastlines: Natural Earth (public domain).
+- Sound examples: see examples/CREDITS.md.

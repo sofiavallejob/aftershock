@@ -1,0 +1,120 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aftershock sound examples</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#12101b;--card:#1c1929;--t1:#f1effa;--t2:#c4c1d6;--t3:#8d8aa3;--lime:#e4f58c;--lav:#c798ee;--teal:#68c7d2;--on:#17151f;--line:rgba(255,255,255,.08)}
+@media (prefers-color-scheme: light){:root:not([data-theme=dark]){--bg:#f5f2fa;--card:#fbf9fe;--t1:#221d33;--t2:#4c4663;--t3:#6c6683;--lime:#d9ef6e;--lav:#a97ee6;--teal:#3fa8b5;--line:rgba(45,35,85,.1)}}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(900px 600px at 10% -10%,rgba(150,110,230,.2),transparent 70%),radial-gradient(800px 600px at 110% 110%,rgba(110,190,200,.14),transparent 70%),var(--bg);background-attachment:fixed;color:var(--t2);font:15px/1.6 'IBM Plex Sans',system-ui,sans-serif}
+main{max-width:1080px;margin:0 auto;padding:48px 16px 80px}
+h1,h2,h3,button,.meta{font-family:'Pixelify Sans',monospace}h1{font-size:44px;letter-spacing:2px;color:var(--t1);margin:0}h2{color:var(--t1);font-size:20px;margin:40px 0 14px}h3{color:var(--t1);font-size:17px;margin:0}
+.stripe{display:flex;gap:5px;margin:14px 0 18px}.stripe span{flex:1;height:5px;border-radius:3px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.card{background:linear-gradient(180deg,rgba(199,152,238,.12),rgba(199,152,238,0) 60%),var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.card p{margin:0;font-size:14px}.top{display:flex;justify-content:space-between;gap:8px;align-items:baseline}.meta{font-size:11px;color:var(--t3)}small{color:var(--t3);font-size:12px}
+.ab{display:flex;gap:8px;align-items:center}button{cursor:pointer;font-size:13px;border-radius:9px;border:1px solid var(--line);background:rgba(127,127,127,.08);color:var(--t1);padding:7px 14px}
+button:focus-visible{outline:2px solid var(--lime);outline-offset:2px}.play{background:var(--lav);color:var(--on);border-color:transparent;min-width:70px}.play.playing{background:var(--lime)}
+.seg{display:flex;gap:3px;padding:3px;border-radius:11px;background:rgba(0,0,0,.2)}.seg button{border:0;background:none;padding:5px 12px}.seg .on{background:var(--lime);color:var(--on)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip.on{background:var(--teal);color:var(--on)}a{color:var(--lav)}
+</style></head><body><main>
+<h1>AFTERSHOCK</h1><div class="stripe" aria-hidden="true"><span style="background:#68c7d2"></span><span style="background:#eda967"></span><span style="background:#c798ee"></span><span style="background:#e8899b"></span><span style="background:#e9cb72"></span><span style="background:#8ba9ec"></span><span style="background:#77b99a"></span><span style="background:#b7c1ce"></span><span style="background:#db93c0"></span></div>
+<p>Sound examples for <b>Aftershock</b>, a reverb made from real earthquake recordings. Each one is a dry sound run through a factory preset with the real plugin. Switch between <b>Dry</b> and <b>Aftershock</b> while it plays. Dry and processed versions are matched in loudness.</p>
+<h2>Same snare, six earthquakes</h2><p>One snare hit through the neutral Earth Tour settings, only the earthquake changes. Volcanic rock (Kilauea, Etna) swallows energy fast; old craton (Botswana) and far stations ring longer and darker.</p>
+<div class="chips"><button class="chip" data-src="audio/cmp_snare_petrinja2020.mp3">Petrinja · near</button><button class="chip" data-src="audio/cmp_snare_kilauea2018.mp3">Kilauea · near</button><button class="chip" data-src="audio/cmp_snare_etna2018.mp3">Etna · near</button><button class="chip" data-src="audio/cmp_snare_botswana2017.mp3">Botswana · near</button><button class="chip" data-src="audio/cmp_snare_tohoku2011.mp3">Tohoku · far</button><button class="chip" data-src="audio/cmp_snare_okhotsk2013.mp3">Okhotsk · far</button></div>
+<h2>Same voice, three distances</h2><p>The 2020 Petrinja earthquake, recorded 179, 917 and 3,928 km away. The further the waves travel, the more highs the Earth absorbs.</p>
+<div class="chips"><button class="chip" data-src="audio/cmp_voice_petrinja_near.mp3">Near · 179 km</button><button class="chip" data-src="audio/cmp_voice_petrinja_regional.mp3">Regional · 917 km</button><button class="chip" data-src="audio/cmp_voice_petrinja_tele.mp3">Far · 3,928 km</button></div>
+<h2>Vocals</h2><div class="grid"><article class="card"><div class="top"><h3>Close Quarters</h3><span class="meta">petrinja2020 · near</span></div>
+<p>Short, present room for lead vocals. Early arrivals from a station 179 km from the quake give it a body without wash.</p>
+<div class="ab" data-dry="audio/dry_voice.mp3" data-wet="audio/01_close_quarters.mp3"><button class="play" aria-label="Play Close Quarters">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Dark spoken word, female vocal</small></article><article class="card"><div class="top"><h3>Distant Choir</h3><span class="meta">illapel2015 · regional</span></div>
+<p>Dark, wide tail. The 900 km path has already lost its highs, so it sits behind the voice.</p>
+<div class="ab" data-dry="audio/dry_voice.mp3" data-wet="audio/02_distant_choir.mp3"><button class="play" aria-label="Play Distant Choir">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Dark spoken word, female vocal</small></article><article class="card"><div class="top"><h3>Whisper Cave</h3><span class="meta">etna2018 · near</span></div>
+<p>Volcanic rock swallows energy fast: a tight, grainy little space for spoken word and whispers.</p>
+<div class="ab" data-dry="audio/dry_voice.mp3" data-wet="audio/03_whisper_cave.mp3"><button class="play" aria-label="Play Whisper Cave">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Dark spoken word, female vocal</small></article><article class="card"><div class="top"><h3>Ballad Halo</h3><span class="meta">fiji2018 · far</span></div>
+<p>Long, smooth halo from a 600 km deep earthquake. Deep slabs ring cleanly; ducking keeps the words clear.</p>
+<div class="ab" data-dry="audio/dry_arpeggio.mp3" data-wet="audio/12_ballad_halo.mp3"><button class="play" aria-label="Play Ballad Halo">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Arpegio 2</small></article></div><h2>Mix &amp; Ambience</h2><div class="grid"><article class="card"><div class="top"><h3>Dialogue Space</h3><span class="meta">haiti2010 · near</span></div>
+<p>Natural small-space feel for film and podcast dialogue.</p>
+<div class="ab" data-dry="audio/dry_voice.mp3" data-wet="audio/04_dialogue_space.mp3"><button class="play" aria-label="Play Dialogue Space">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Dark spoken word, female vocal</small></article></div><h2>Drums</h2><div class="grid"><article class="card"><div class="top"><h3>Tight Kit Room</h3><span class="meta">kilauea2018 · near</span></div>
+<p>Short volcanic decay with strong early arrivals. Adds a room around a dry kit without smearing hits.</p>
+<div class="ab" data-dry="audio/dry_drums.mp3" data-wet="audio/05_tight_kit_room.mp3"><button class="play" aria-label="Play Tight Kit Room">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Drum machine, dry 4/4</small></article><article class="card"><div class="top"><h3>Overheads in the Hall</h3><span class="meta">norcia2016 · regional</span></div>
+<p>Medium Mediterranean crust: even decay across bands, good on overheads and room mics.</p>
+<div class="ab" data-dry="audio/dry_drums.mp3" data-wet="audio/06_overheads_in_the_hall.mp3"><button class="play" aria-label="Play Overheads in the Hall">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Drum machine, dry 4/4</small></article><article class="card"><div class="top"><h3>Big Snare</h3><span class="meta">turkiye2023 · regional</span></div>
+<p>The Kahramanmaras recording gives a bright, punchy tail for snares and claps.</p>
+<div class="ab" data-dry="audio/dry_snare.mp3" data-wet="audio/07_big_snare.mp3"><button class="play" aria-label="Play Big Snare">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Punk goes snare</small></article><article class="card"><div class="top"><h3>Fault Line Break</h3><span class="meta">ridgecrest2019 · near</span></div>
+<p>Rough, rhythmic arrivals from a strike-slip fault. Push the grit for breakbeats and loops.</p>
+<div class="ab" data-dry="audio/dry_riff.mp3" data-wet="audio/08_fault_line_break.mp3"><button class="play" aria-label="Play Fault Line Break">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Short guitar riff</small></article></div><h2>Guitar &amp; Keys</h2><div class="grid"><article class="card"><div class="top"><h3>Clean Guitar Bloom</h3><span class="meta">puebla2017 · near</span></div>
+<p>Intermediate-depth slab, close station: a springy bloom for clean electric guitar.</p>
+<div class="ab" data-dry="audio/dry_tele_chord.mp3" data-wet="audio/09_clean_guitar_bloom.mp3"><button class="play" aria-label="Play Clean Guitar Bloom">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Telecaster clean, E minor</small></article><article class="card"><div class="top"><h3>Acoustic Body</h3><span class="meta">durres2019 · near</span></div>
+<p>Small and woody. Mostly early arrivals for acoustic guitar and plucked strings.</p>
+<div class="ab" data-dry="audio/dry_acoustic_strum.mp3" data-wet="audio/10_acoustic_body.mp3"><button class="play" aria-label="Play Acoustic Body">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Guitar strums</small></article><article class="card"><div class="top"><h3>Rhodes Drift</h3><span class="meta">samos2020 · regional</span></div>
+<p>Aegean crust with a slow wobble. Warm and moving under electric piano.</p>
+<div class="ab" data-dry="audio/dry_chord.mp3" data-wet="audio/14_rhodes_drift.mp3"><button class="play" aria-label="Play Rhodes Drift">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Chord 01</small></article><article class="card"><div class="top"><h3>Piano in the Craton</h3><span class="meta">botswana2017 · near</span></div>
+<p>Old, cold continental rock barely attenuates: a long, even, clear tail for piano.</p>
+<div class="ab" data-dry="audio/dry_chord.mp3" data-wet="audio/20_piano_in_the_craton.mp3"><button class="play" aria-label="Play Piano in the Craton">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Chord 01</small></article></div><h2>Synths &amp; Pads</h2><div class="grid"><article class="card"><div class="top"><h3>Surface Wave Pluck</h3><span class="meta">gorkha2015 · regional</span></div>
+<p>Only the surface waves: a rolling, pitched tail that suits arpeggios and plucks.</p>
+<div class="ab" data-dry="audio/dry_arpeggio.mp3" data-wet="audio/11_surface_wave_pluck.mp3"><button class="play" aria-label="Play Surface Wave Pluck">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Arpegio 2</small></article><article class="card"><div class="top"><h3>Deep Slab Swell</h3><span class="meta">bonin2015 · regional</span></div>
+<p>Reversed tail from a 664 km deep earthquake: sound swells into every note.</p>
+<div class="ab" data-dry="audio/dry_tele_chord.mp3" data-wet="audio/13_deep_slab_swell.mp3"><button class="play" aria-label="Play Deep Slab Swell">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Telecaster clean, E minor</small></article><article class="card"><div class="top"><h3>Aurora Pad</h3><span class="meta">kamchatka2025 · regional</span></div>
+<p>Long, bright and shimmering, from the 2025 M8.8 Kamchatka earthquake.</p>
+<div class="ab" data-dry="audio/dry_stab.mp3" data-wet="audio/15_aurora_pad.mp3"><button class="play" aria-label="Play Aurora Pad">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Nervousraver 2 stab</small></article><article class="card"><div class="top"><h3>Mantle Drone</h3><span class="meta">okhotsk2013 · far</span></div>
+<p>Ten seconds of a M8.3 deep quake crossing 4000 km. Huge and dark, for drones.</p>
+<div class="ab" data-dry="audio/dry_bass_note.mp3" data-wet="audio/16_mantle_drone.mp3"><button class="play" aria-label="Play Mantle Drone">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Bass guitar single G-A note</small></article></div><h2>Sound Design</h2><div class="grid"><article class="card"><div class="top"><h3>Aftershock</h3><span class="meta">noto2024 · near</span></div>
+<p>The signature: starts at the P wave, raw ground motion and exaggerated decay.</p>
+<div class="ab" data-dry="audio/dry_heavy_riff.mp3" data-wet="audio/17_aftershock.mp3"><button class="play" aria-label="Play Aftershock">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Heavy guitar riff, double track</small></article><article class="card"><div class="top"><h3>Tsunami Siren</h3><span class="meta">maule2010 · far</span></div>
+<p>Reversed teleseismic recording of the 2010 M8.8 Maule earthquake. A long rising sweep.</p>
+<div class="ab" data-dry="audio/dry_snare.mp3" data-wet="audio/18_tsunami_siren.mp3"><button class="play" aria-label="Play Tsunami Siren">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Punk goes snare</small></article><article class="card"><div class="top"><h3>Ground Truth</h3><span class="meta">chiapas2017 · near</span></div>
+<p>Pure audification: the seismogram itself, played faster, as the reverb.</p>
+<div class="ab" data-dry="audio/dry_stab.mp3" data-wet="audio/19_ground_truth.mp3"><button class="play" aria-label="Play Ground Truth">Play</button>
+<div class="seg" role="radiogroup" aria-label="Dry or with Aftershock"><button role="radio" aria-checked="false" data-k="dry">Dry</button><button role="radio" aria-checked="true" class="on" data-k="wet">Aftershock</button></div></div>
+<small>Source: Nervousraver 2 stab</small></article></div>
+<h2>Credits</h2><p>Dry sounds from <a href="https://freesound.org">Freesound</a>, see <a href="CREDITS.md">CREDITS.md</a>. Plugin and seismic data credits: <a href="https://github.com/sofiavallejob/aftershock">github.com/sofiavallejob/aftershock</a>.</p>
+</main>
+<script>
+const audio=new Audio();let current=null;
+function stopAll(){audio.pause();document.querySelectorAll('.play').forEach(b=>{b.textContent='Play';b.classList.remove('playing')});document.querySelectorAll('.chip').forEach(b=>b.classList.remove('on'));current=null}
+document.querySelectorAll('.ab').forEach(ab=>{
+ const play=ab.querySelector('.play');const segs=ab.querySelectorAll('.seg button');
+ const which=()=>ab.querySelector('.seg .on').dataset.k;
+ play.onclick=()=>{if(current===ab){stopAll();return}stopAll();audio.src=ab.dataset[which()];audio.play();current=ab;play.textContent='Stop';play.classList.add('playing')};
+ segs.forEach(s=>s.onclick=()=>{segs.forEach(o=>{o.classList.toggle('on',o===s);o.setAttribute('aria-checked',o===s)});
+  if(current===ab){const t=audio.currentTime;audio.src=ab.dataset[which()];audio.currentTime=t;audio.play()}});
+});
+document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{const was=c.classList.contains('on');stopAll();if(was)return;audio.src=c.dataset.src;audio.play();c.classList.add('on');current=c});
+audio.onended=stopAll;
+</script></body></html>

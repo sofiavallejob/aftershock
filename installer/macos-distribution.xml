@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="2">
+    <title>Aftershock</title>
+    <welcome file="welcome.txt"/>
+    <license file="LICENSE.txt"/>
+    <options customize="always" require-scripts="false" hostArchitectures="arm64,x86_64"/>
+    <choices-outline>
+        <line choice="vst3"/>
+        <line choice="au"/>
+        <line choice="app"/>
+    </choices-outline>
+    <choice id="vst3" title="VST3 plug-in" description="For Reaper, Ableton Live, Cubase, Bitwig and most other hosts."><pkg-ref id="com.sofiavallejo.aftershock.vst3"/></choice>
+    <choice id="au" title="Audio Unit" description="For Logic Pro, GarageBand and other Audio Unit hosts."><pkg-ref id="com.sofiavallejo.aftershock.au"/></choice>
+    <choice id="app" title="Standalone app" description="Aftershock as its own app, using your audio interface directly."><pkg-ref id="com.sofiavallejo.aftershock.app"/></choice>
+    <pkg-ref id="com.sofiavallejo.aftershock.vst3">vst3.pkg</pkg-ref>
+    <pkg-ref id="com.sofiavallejo.aftershock.au">au.pkg</pkg-ref>
+    <pkg-ref id="com.sofiavallejo.aftershock.app">app.pkg</pkg-ref>
+</installer-gui-script>
