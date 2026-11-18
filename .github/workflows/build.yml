@@ -40,6 +40,12 @@ jobs:
           productbuild --distribution installer/macos-distribution.xml --package-path . --resources installer "dist/Aftershock-$V-macOS.pkg"
           (cd pkgroot && zip -qry "../dist/Aftershock-$V-macOS.zip" vst3 au app)
           cp build/aftershock_render_artefacts/Release/aftershock_render dist/
+          # disk image: the installer plus the manual, the usual way to ship on a Mac
+          mkdir -p dmg
+          cp "dist/Aftershock-$V-macOS.pkg" "dmg/Install Aftershock.pkg"
+          cp docs/Aftershock-Manual.pdf dmg/
+          cp installer/welcome.txt "dmg/Read me.txt"
+          hdiutil create -volname "Aftershock $V" -srcfolder dmg -ov -format UDZO "dist/Aftershock-$V-macOS.dmg"
       - uses: actions/upload-artifact@v4
         with:
           name: Aftershock-macOS
@@ -91,6 +97,7 @@ jobs:
         with:
           body_path: CHANGELOG.md
           files: |
+            artifacts/Aftershock-macOS/*.dmg
             artifacts/Aftershock-macOS/*.pkg
             artifacts/Aftershock-macOS/*.zip
             artifacts/Aftershock-Windows/*.exe
