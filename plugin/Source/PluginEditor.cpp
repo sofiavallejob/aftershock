@@ -145,7 +145,11 @@ EditorRoot::EditorRoot (AftershockProcessor& p)
     addAndMakeVisible (inMeter); addAndMakeVisible (outMeter);
 
     for (auto* o : std::initializer_list<Overlay*> { &settingsPanel, &aboutPanel, &presetBrowser }) addChildComponent (*o);
-    proc.presets.onChange = [this] { juce::MessageManager::callAsync ([sp = juce::Component::SafePointer<EditorRoot> (this)] { if (sp) { sp->refreshFromProcessor (true); sp->presetBrowser.refresh(); } }); };
+    // MSVC needs the safe pointer made outside the inner lambda
+    proc.presets.onChange = [self = juce::Component::SafePointer<EditorRoot> (this)]
+    {
+        juce::MessageManager::callAsync ([self] { if (self != nullptr) { self->refreshFromProcessor (true); self->presetBrowser.refresh(); } });
+    };
 
     abSlots[0] = proc.apvts.copyState();
     setAdvanced (Settings::get().advanced());

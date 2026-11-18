@@ -13,7 +13,6 @@ std::unique_ptr<juce::AccessibilityHandler> imageHandler (juce::Component& c, st
     return std::make_unique<juce::AccessibilityHandler> (c, juce::AccessibilityRole::image);
 }
 
-static juce::String stationWord (const juce::String& band) { return band == "tele" ? "far" : band; }
 
 // ---------------------------------------------------------------- land
 const Land& Land::get()
